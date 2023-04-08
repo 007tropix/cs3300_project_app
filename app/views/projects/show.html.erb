@@ -1,0 +1,29 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Title:</strong>
+  <%= @project.title %>
+</p>
+
+<p>
+  <strong>Build item:</strong>
+  <%= @project.build_item %>
+</p>
+
+<p>
+  <strong>Credit cost:</strong>
+  <%= @project.credit_cost %>
+</p>
+
+<p>
+  <strong>Endo cost:</strong>
+  <%= @project.endo_cost %>
+</p>
+
+<p>
+  <strong>Forma cost:</strong>
+  <%= @project.forma_cost %>
+</p>
+
+<%= link_to 'Edit', edit_project_path(@project) %> |
+<%= link_to 'Back', projects_path %>

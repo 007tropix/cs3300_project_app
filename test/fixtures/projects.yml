@@ -1,0 +1,15 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  title: MyString
+  build_item: MyString
+  credit_cost: 1
+  endo_cost: 1
+  forma_cost: 1
+
+two:
+  title: MyString
+  build_item: MyString
+  credit_cost: 1
+  endo_cost: 1
+  forma_cost: 1
