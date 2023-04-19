@@ -22,9 +22,11 @@
         <td><%= project.credit_cost %></td>
         <td><%= project.endo_cost %></td>
         <td><%= project.forma_cost %></td>
+        <% if user_signed_in? %>
         <td><%= link_to 'Show', project, class: "btn btn-primary"%></td>
         <td><%= link_to 'Edit', edit_project_path(project), class: "btn btn-secondary"%></td>
         <td><%= link_to 'Destroy', project, class: "btn btn-danger", method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        <% end %> 
       </tr>
     <% end %>
   </tbody>
@@ -32,5 +34,6 @@
 
 <br>
 
-
+<% if user_signed_in? %>
 <a href="/projects/new" class="btn btn-success" role="button">New Project</a>
+<% end %> 
